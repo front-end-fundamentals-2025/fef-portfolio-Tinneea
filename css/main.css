@@ -1,5 +1,5 @@
 *{
-    font-family: "Noto Sans", serif;
+    font-family:  "Noto Sans", serif;
     font-weight: 200;
     text-align: center;
     background-color: black;
@@ -43,7 +43,7 @@ figure {
 }
 
 .category-image {
-    width: 30%;
+    width: 100%;
 }
 
 /*contact-page*/
@@ -55,6 +55,6 @@ figure {
 /*FOOTER*/
 footer {
     margin-top: 3rem;
-    border-top: 1px solid black;
+    border-top: 1px white;
 }
 
