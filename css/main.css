@@ -2,9 +2,15 @@
     font-family: "Noto Sans", serif;
     font-weight: 200;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 /* HEADER*/
+
+a {
+    color: white;
+}
 
 #logo {
     font-weight: 200;
@@ -20,10 +26,6 @@ ul {
     font-weight: 200;
     font-size: 1.6rem;
     padding-left: 0;
-}
-
-a {
-    color: black;
 }
 
 /* MAIN*/
