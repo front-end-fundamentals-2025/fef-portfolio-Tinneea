@@ -32,6 +32,13 @@ ul {
   width: 100%;
 }
 
+/*contact me*/
+
+.container label {
+    color: white;
+}
+
+
 /*category section*/
 h1 {
   text-align: center;
