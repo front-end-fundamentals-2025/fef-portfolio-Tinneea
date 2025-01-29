@@ -4,9 +4,16 @@
   text-align: center;
   background-color: black;
   color: white;
+  
+  
 }
 
 /* HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
 
 a {
   color: white;
@@ -21,10 +28,15 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
   text-align: center;
   font-weight: 200;
   font-size: 1.6rem;
   padding-left: 0;
+}
+
+li {
+    margin-left: 5rem;
 }
 
 /* MAIN*/
@@ -34,12 +46,69 @@ ul {
 
 /*contact me*/
 
-.container label {
-    color: white;
+.container {
+    background-color: black;
+    padding: 50px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
 
-/*category section*/
+label {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: pink;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid pink;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: pink;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 15px 25px; 
+    font-size: 25px; 
+    border-radius: 8px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+}
+
+/*portfolio section*/
+
+.protfolio-container {
+    display: grid;
+    grid-template-areas: 
+    'img'
+    'img'
+    'img';
+}
+
 h1 {
   text-align: center;
 }
@@ -52,14 +121,18 @@ figure {
   width: 100%;
 }
 
-/*contact-page*/
-
-.contact-image {
-  width: 5%;
-}
 
 /*FOOTER*/
 footer {
   margin-top: 3rem;
   border-top: 1px white;
+}
+
+
+
+@media screen and (max-width: 520px) {
+    header {
+        flex-direction: column;
+        align-items: start;
+    }
 }
