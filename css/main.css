@@ -62,24 +62,39 @@ li {
 
 /*contact me*/
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .container {
   background-color: black;
-  width: 100%;
-  display: flex;
+  width: 80%;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   align-items: center;
+  justify-items: flex;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
   font-size: 28px;
   color: #333;
+  grid-column: span 2;
 }
 
 label {
   display: block;
-  color: white;
-  font-weight: bold;
   color: pink;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -97,7 +112,6 @@ textarea:focus {
   outline: none;
 }
 
-
 input[type="submit"] {
   background-color: pink;
   color: black;
@@ -112,7 +126,12 @@ input[type="submit"]:active {
   animation-name: shake;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+}
 
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @keyframes shake {
@@ -138,10 +157,6 @@ input[type="submit"]:active {
     transform: scale(1);
   }
 }
-
-
-
-
 
 /*portfolio section*/
 
@@ -175,23 +190,34 @@ figure {
 
 .snow1 {
   display: grid;
-  grid-template-areas: "img txt";
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .nature1-image {
-  width: 50%;
+  width: 100%;
   grid-area: img;
 }
 
 .text1 {
   min-width: 600px;
   grid-area: txt;
+  text-align: left;
 }
 
 @media screen and (max-width: 595px) {
+  .snow1 {
+    grid-template-columns: 1fr;
+  }
+
   .nature1-imge {
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .text1 {
+    min-width: unset;
+    text-align: center;
   }
 }
 
