@@ -97,6 +97,7 @@ textarea:focus {
   outline: none;
 }
 
+
 input[type="submit"] {
   background-color: pink;
   color: black;
@@ -107,9 +108,40 @@ input[type="submit"] {
   width: 100%;
 }
 
-input[type="submit"]:hover {
-  background-color: white;
+input[type="submit"]:active {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
 }
+
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+
+
+
+
 
 /*portfolio section*/
 
