@@ -1,8 +1,6 @@
 * {
   font-family: "Noto Sans", serif;
   font-weight: 200;
-  background-color: black;
-  color: white;
   text-decoration: none;
 }
 
@@ -17,12 +15,36 @@ a {
   color: white;
 }
 
+#change-text-color {
+  background-color: pink;
+  color: black;
+  border: none;
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
 #logo {
   font-weight: 200;
   text-align: center;
   font-size: 4.1rem;
   padding: 0;
   margin-left: 10;
+}
+
+#logo:hover {
+  animation-name: hover;
+  animation-duration: 2s;
+}
+
+@keyframes hover {
+  35% {
+    font-size: 5vw;
+    color: pink;
+  }
 }
 
 ul {
@@ -34,7 +56,7 @@ ul {
   justify-content: center;
 }
 
-li {
+ul li {
   margin-left: 5rem;
 }
 
@@ -122,16 +144,16 @@ input[type="submit"] {
   width: 100%;
 }
 
-input[type="submit"]:active {
-  animation-name: shake;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-
 .input-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+input[type="submit"]:active {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes shake {
